@@ -16,8 +16,9 @@ public with sharing class AccountSearchController {
                 BillingState, BillingPostalCode
                 ORDER BY Name
                 LIMIT 10) ];
+		
+			accounts = searchResults[0];
     	}
-		accounts = searchResults[0];
 
 	return accounts;
     }
